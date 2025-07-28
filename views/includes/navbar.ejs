@@ -34,7 +34,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link mr-2" href="/listings">Explore</a>
+          <a class="nav-link mr-2" href="/listings"
+            style="color: #333; font-weight: 500; padding: 8px 16px; text-decoration: none; border-radius: 6px; transition: background-color 0.3s ease;"
+              onmouseover="this.style.backgroundColor='#f0f0f0'"
+              onmouseout="this.style.backgroundColor='transparent'"
+          >Explore</a>
         </div>
         <div class="navbar-nav ms-auto">
              <form class="d-flex" role="search"  action="/listings/search" method="GET">
@@ -50,13 +54,22 @@
         </div>
 
          <div class="navbar-nav  ms-auto"> 
-           <a class="nav-link mr-2" href="/listings/new">Airbnb your home</a>
+           <a class="nav-link mr-2" href="/listings/new"
+           style="background-color: #20c997; color: white; padding: 10px 18px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; transition: all 0.3s ease;"
+  onmouseover="this.style.backgroundColor='#20c997'; this.style.transform='scale(1.05)'"
+  onmouseout="this.style.backgroundColor='#20c997'; this.style.transform='scale(1)'"
+
+           ><i class="fas fa-home"></i> Airbnb your home</a>
           <% if(!currUser) { %>
-          <a class="nav-link btn btn-outline-secondary mr-2" href="/signup"><b>Sign up</b></a>
-          <a class="nav-link btn btn-outline-secondary mr-2" href="/login"><b>Log in</b></a>
+          <a class="nav-link ms-2 mr-2"  title="Create your account by clicking on it"
+            style="color: #333; font-weight: 500; padding: 8px 16px; text-decoration: none; border-radius: 6px; transition: background-color 0.3s ease;"
+              onmouseover="this.style.backgroundColor='#f0f0f0'"
+              onmouseout="this.style.backgroundColor='transparent'"
+             href="/signup"><b>Sign up</b></a>
+          <a class="nav-link btn btn-outline-primary  rounded-pill px-3 py-2 me-2 mr-2"  href="/login"><b>Log in</b></a>
           <% } %>
             <% if(currUser) { %>
-          <a class="nav-link btn btn-outline-danger mr-2" href="/logout"><b>Logout</b></a>
+          <a class="nav-link btn btn-outline-danger rounded-pill px-3 py-2 me-2 mr-2" href="/logout"><b>Log out</b></a>
           <% } %>
         </div>
 
