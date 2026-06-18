@@ -53,7 +53,7 @@ const store = MongoStore.create({
     stringify: true,
 });
 
-store.on("error",()=>{
+store.on("error",(err)=>{
     console.log("ERROR IN MONGO SESSION STORE", err);
 });
 
