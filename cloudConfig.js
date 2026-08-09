@@ -8,8 +8,8 @@ cloudinary.config({
    
 });
 
-    console.log(process.env.CLOUD_NAME);
-    console.log(process.env.CLOUD_API_KEY);
+    // console.log(process.env.CLOUD_NAME);
+    // console.log(process.env.CLOUD_API_KEY);
 
 
 const storage = new CloudinaryStorage({
