@@ -1,0 +1,114 @@
+/* Main listing card */
+.show-card {
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.show-img {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Listing information */
+.show-card .card-body {
+    padding: 1.5rem 0;
+}
+
+.show-card .card-text {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+/* Edit + Delete buttons */
+.btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Reviews */
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 0;
+}
+
+.review-card .card-body {
+    padding: 1rem;
+}
+
+.review-card .card-title {
+    font-weight: 600;
+}
+
+.review-card .card-text {
+    margin-bottom: 0.7rem;
+}
+
+/* Rating stars */
+.star-rating {
+    display: flex;
+    gap: 0.3rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.8rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+    color: #ffc107;
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* Review section */
+.review-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.review-section h4 {
+    margin-bottom: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .show-card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .show-img {
+        height: 35vh;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .review-card {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}

@@ -1,0 +1,120 @@
+
+/* for Search and Navbar styles */
+
+.search-btn {
+            background-color: #fe424d;
+            color: #fff;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+          }
+
+          .search-btn:hover {
+            background-color: #fe424d;
+            color: #fff;
+          }
+
+          .search-btn i {
+            display: inline;
+            margin-right: 0.5rem;
+          }
+
+          .search-inp {
+            border-radius: 20px;
+            padding: 0.5rem 3rem;
+            font-size: 0.9rem;
+          }
+
+          .nav-hover {
+            color: #333;
+            font-weight: 500;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+          }
+
+          .nav-hover:hover {
+            background-color: #f0f0f0;
+          }
+
+          .host-btn {
+            background-color: #20c997;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+          }
+
+          .host-btn:hover {
+            background-color: #20c997;
+            transform: scale(1.05);
+            color: white;
+          }
+
+ /* Mobile navbar toggle */
+.mobile-toggle {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 7px 10px;
+  transition: all 0.3s ease;
+}
+
+.mobile-toggle:hover {
+  background-color: #f5f5f5;
+}
+
+.mobile-toggle:focus {
+  box-shadow: none;
+}
+
+/* Mobile navbar */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff;
+    margin-top: 12px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+  }
+
+  .navbar-nav {
+    gap: 5px;
+  }
+
+  .nav-hover {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+
+  .nav-hover:hover {
+    background-color: #f5f5f5;
+  }
+
+  .auth-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .host-btn {
+    display: block;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .search-inp {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
